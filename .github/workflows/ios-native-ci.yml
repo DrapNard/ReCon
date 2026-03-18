@@ -1,0 +1,40 @@
+name: iOS Native CI
+
+on:
+  push:
+    paths:
+      - 'ios-native/**'
+      - '.github/workflows/ios-native-ci.yml'
+  pull_request:
+    paths:
+      - 'ios-native/**'
+      - '.github/workflows/ios-native-ci.yml'
+
+jobs:
+  build-and-test-ios-native:
+    runs-on: macos-15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Xcode Version
+        run: xcodebuild -version
+
+      - name: Build (no signing)
+        run: |
+          xcodebuild \
+            -project ios-native/ReConNative.xcodeproj \
+            -scheme ReConNative \
+            -configuration Debug \
+            -destination 'generic/platform=iOS' \
+            CODE_SIGNING_ALLOWED=NO \
+            build
+
+      - name: Test (simulator)
+        run: |
+          xcodebuild \
+            -project ios-native/ReConNative.xcodeproj \
+            -scheme ReConNative \
+            -configuration Debug \
+            -destination 'platform=iOS Simulator,name=iPhone 16' \
+            test
