@@ -1,7 +1,7 @@
 # ReCon iOS Native fork
 
 <p align="center">
-<img src="https://github.com/DrapNard/ReCon/raw/main/docs/icon.png" width="512"/>
+<img src="https://github.com/DrapNard/ReCon/raw/main/docs/icon.png" width="256"/>
 </p>
 
 ---
