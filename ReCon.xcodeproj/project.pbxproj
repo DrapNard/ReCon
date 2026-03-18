@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AB2C96B2F685F96007ECB98 /* ReCon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2C96A2F685F95007ECB98 /* ReCon.icon */; settings = {ASSET_TAGS = (Assets, ); }; };
+		A10000010000000000000001 /* ReConApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000001 /* ReConApp.swift */; };
+		A10000010000000000000002 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000002 /* RootView.swift */; };
+		A10000010000000000000003 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000003 /* AppContainer.swift */; };
+		A10000010000000000000004 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000004 /* AppEnvironment.swift */; };
+		A10000010000000000000005 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000005 /* AppError.swift */; };
+		A10000010000000000000006 /* AuthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000006 /* AuthModels.swift */; };
+		A10000010000000000000007 /* SettingsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000007 /* SettingsModels.swift */; };
+		A10000010000000000000008 /* DomainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000008 /* DomainModels.swift */; };
+		A10000010000000000000009 /* RichTextFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000009 /* RichTextFormatter.swift */; };
+		A1000001000000000000000A /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000000000000000A /* KeychainStore.swift */; };
+		A1000001000000000000000B /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000000000000000B /* SettingsStore.swift */; };
+		A1000001000000000000000C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000000000000000C /* APIClient.swift */; };
+		A1000001000000000000000D /* HubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000000000000000D /* HubClient.swift */; };
+		A1000001000000000000000E /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000000000000000E /* NotificationService.swift */; };
+		A1000001000000000000000F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000000000000000F /* AuthService.swift */; };
+		A10000010000000000000010 /* ReConRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000010 /* ReConRepository.swift */; };
+		A10000010000000000000011 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000011 /* LoginView.swift */; };
+		A10000010000000000000012 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000012 /* MainTabView.swift */; };
+		A10000010000000000000013 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000013 /* FriendsView.swift */; };
+		A10000010000000000000014 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000014 /* ChatView.swift */; };
+		A10000010000000000000015 /* SessionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000015 /* SessionsView.swift */; };
+		A10000010000000000000016 /* WorldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000016 /* WorldsView.swift */; };
+		A10000010000000000000017 /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000017 /* InventoryView.swift */; };
+		A10000010000000000000018 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000018 /* SettingsView.swift */; };
+		A10000010000000000000019 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000019 /* ProfileView.swift */; };
+		A1000001000000000000001A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2000001000000000000001A /* Assets.xcassets */; };
+		A1000001000000000000001B /* Environment.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2000001000000000000001B /* Environment.plist */; };
+		A1000001000000000000001C /* ReConTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000000000000001C /* ReConTests.swift */; };
+		A1000001000000000000001D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000023 /* LaunchScreen.storyboard */; };
+		A1000001000000000000001E /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000024 /* UserProfileView.swift */; };
+		C10000010000000000000001 /* ReConWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20000010000000000000001 /* ReConWidget.swift */; };
+		C10000010000000000000002 /* ReConWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20000010000000000000002 /* ReConWidgetBundle.swift */; };
+		C10000010000000000000003 /* ReConWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C20000010000000000000005 /* ReConWidgetExtension.appex */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A50000010000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A40000010000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A30000010000000000000001;
+			remoteInfo = ReCon;
+		};
+		C50000010000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A40000010000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C30000010000000000000003;
+			remoteInfo = ReConWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA0000010000000000000007 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C10000010000000000000003 /* ReConWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2AB2C96A2F685F95007ECB98 /* ReCon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = ReCon.icon; sourceTree = "<group>"; };
+		A20000010000000000000001 /* ReConApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReConApp.swift; sourceTree = "<group>"; };
+		A20000010000000000000002 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A20000010000000000000003 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		A20000010000000000000004 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		A20000010000000000000005 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		A20000010000000000000006 /* AuthModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModels.swift; sourceTree = "<group>"; };
+		A20000010000000000000007 /* SettingsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModels.swift; sourceTree = "<group>"; };
+		A20000010000000000000008 /* DomainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainModels.swift; sourceTree = "<group>"; };
+		A20000010000000000000009 /* RichTextFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextFormatter.swift; sourceTree = "<group>"; };
+		A2000001000000000000000A /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		A2000001000000000000000B /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		A2000001000000000000000C /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		A2000001000000000000000D /* HubClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubClient.swift; sourceTree = "<group>"; };
+		A2000001000000000000000E /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		A2000001000000000000000F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		A20000010000000000000010 /* ReConRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReConRepository.swift; sourceTree = "<group>"; };
+		A20000010000000000000011 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A20000010000000000000012 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		A20000010000000000000013 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
+		A20000010000000000000014 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		A20000010000000000000015 /* SessionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsView.swift; sourceTree = "<group>"; };
+		A20000010000000000000016 /* WorldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldsView.swift; sourceTree = "<group>"; };
+		A20000010000000000000017 /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
+		A20000010000000000000018 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A20000010000000000000019 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A2000001000000000000001A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2000001000000000000001B /* Environment.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Environment.plist; sourceTree = "<group>"; };
+		A2000001000000000000001C /* ReConTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReConTests.swift; sourceTree = "<group>"; };
+		A2000001000000000000001D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2000001000000000000001E /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		A2000001000000000000001F /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		A20000010000000000000020 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		A20000010000000000000021 /* ReCon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = ReCon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000010000000000000022 /* ReConTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ReConTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000010000000000000023 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A20000010000000000000024 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		C20000010000000000000001 /* ReConWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReConWidget.swift; sourceTree = "<group>"; };
+		C20000010000000000000002 /* ReConWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReConWidgetBundle.swift; sourceTree = "<group>"; };
+		C20000010000000000000003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C20000010000000000000004 /* ReConWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReConWidget.entitlements; sourceTree = "<group>"; };
+		C20000010000000000000005 /* ReConWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; path = ReConWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		A70000010000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A70000010000000000000002 /* ReCon */,
+				A70000010000000000000003 /* ReCon/Tests */,
+				A70000010000000000000004 /* Products */,
+				A70000010000000000000005 /* ReCon/Config */,
+				C70000010000000000000001 /* ReConWidget */,
+			);
+			sourceTree = "<group>";
+		};
+		A70000010000000000000002 /* ReCon */ = {
+			isa = PBXGroup;
+			children = (
+				A70000010000000000000006 /* Sources */,
+				A70000010000000000000007 /* Resources */,
+			);
+			path = ReCon;
+			sourceTree = "<group>";
+		};
+		A70000010000000000000003 /* ReCon/Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000000000000001C /* ReConTests.swift */,
+			);
+			path = ReCon/Tests;
+			sourceTree = "<group>";
+		};
+		A70000010000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000021 /* ReCon.app */,
+				A20000010000000000000022 /* ReConTests.xctest */,
+				C20000010000000000000005 /* ReConWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A70000010000000000000005 /* ReCon/Config */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000000000000001E /* Base.xcconfig */,
+				A2000001000000000000001F /* Debug.xcconfig */,
+				A20000010000000000000020 /* Release.xcconfig */,
+			);
+			path = ReCon/Config;
+			sourceTree = "<group>";
+		};
+		A70000010000000000000006 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A70000010000000000000008 /* App */,
+				A70000010000000000000009 /* Shared */,
+				A7000001000000000000000A /* Infrastructure */,
+				A7000001000000000000000B /* Data */,
+				A7000001000000000000000C /* Features */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A70000010000000000000007 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2AB2C96A2F685F95007ECB98 /* ReCon.icon */,
+				A2000001000000000000001A /* Assets.xcassets */,
+				A2000001000000000000001B /* Environment.plist */,
+				A2000001000000000000001D /* Info.plist */,
+				A20000010000000000000023 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A70000010000000000000008 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000001 /* ReConApp.swift */,
+				A20000010000000000000002 /* RootView.swift */,
+				A20000010000000000000003 /* AppContainer.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A70000010000000000000009 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000004 /* AppEnvironment.swift */,
+				A20000010000000000000005 /* AppError.swift */,
+				A20000010000000000000006 /* AuthModels.swift */,
+				A20000010000000000000007 /* SettingsModels.swift */,
+				A20000010000000000000008 /* DomainModels.swift */,
+				A20000010000000000000009 /* RichTextFormatter.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A7000001000000000000000A /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000000000000000A /* KeychainStore.swift */,
+				A2000001000000000000000B /* SettingsStore.swift */,
+				A2000001000000000000000C /* APIClient.swift */,
+				A2000001000000000000000D /* HubClient.swift */,
+				A2000001000000000000000E /* NotificationService.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		A7000001000000000000000B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000000000000000F /* AuthService.swift */,
+				A20000010000000000000010 /* ReConRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A7000001000000000000000C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000011 /* LoginView.swift */,
+				A20000010000000000000012 /* MainTabView.swift */,
+				A20000010000000000000013 /* FriendsView.swift */,
+				A20000010000000000000014 /* ChatView.swift */,
+				A20000010000000000000015 /* SessionsView.swift */,
+				A20000010000000000000016 /* WorldsView.swift */,
+				A20000010000000000000017 /* InventoryView.swift */,
+				A20000010000000000000018 /* SettingsView.swift */,
+				A20000010000000000000019 /* ProfileView.swift */,
+				A20000010000000000000024 /* UserProfileView.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		C70000010000000000000001 /* ReConWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C20000010000000000000001 /* ReConWidget.swift */,
+				C20000010000000000000002 /* ReConWidgetBundle.swift */,
+				C20000010000000000000003 /* Info.plist */,
+				C20000010000000000000004 /* ReConWidget.entitlements */,
+			);
+			path = ReConWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A30000010000000000000001 /* ReCon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90000010000000000000001 /* Build configuration list for PBXNativeTarget "ReCon" */;
+			buildPhases = (
+				AA0000010000000000000001 /* Sources */,
+				AA0000010000000000000003 /* Resources */,
+				CA0000010000000000000007 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C50000010000000000000002 /* PBXTargetDependency */,
+			);
+			name = ReCon;
+			productName = ReCon;
+			productReference = A20000010000000000000021 /* ReCon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A30000010000000000000002 /* ReConTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90000010000000000000002 /* Build configuration list for PBXNativeTarget "ReConTests" */;
+			buildPhases = (
+				AA0000010000000000000004 /* Sources */,
+				AA0000010000000000000006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A50000010000000000000002 /* PBXTargetDependency */,
+			);
+			name = ReConTests;
+			productName = ReConTests;
+			productReference = A20000010000000000000022 /* ReConTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C30000010000000000000003 /* ReConWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90000010000000000000001 /* Build configuration list for PBXNativeTarget "ReConWidgetExtension" */;
+			buildPhases = (
+				AA0000010000000000000008 /* Sources */,
+				AA0000010000000000000007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReConWidgetExtension;
+			productName = ReConWidgetExtension;
+			productReference = C20000010000000000000005 /* ReConWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A40000010000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				KnownAssetTags = (
+					Assets,
+				);
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					A30000010000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					A30000010000000000000002 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = A30000010000000000000001;
+					};
+					C30000010000000000000003 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = A90000010000000000000003 /* Build configuration list for PBXProject "ReCon" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A70000010000000000000001;
+			packageReferences = (
+				2AB2C96D2F69F3BF007ECB98 /* XCRemoteSwiftPackageReference "Model3DView" */,
+			);
+			productRefGroup = A70000010000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A30000010000000000000001 /* ReCon */,
+				A30000010000000000000002 /* ReConTests */,
+				C30000010000000000000003 /* ReConWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA0000010000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AB2C96B2F685F96007ECB98 /* ReCon.icon in Resources */,
+				A1000001000000000000001A /* Assets.xcassets in Resources */,
+				A1000001000000000000001B /* Environment.plist in Resources */,
+				A1000001000000000000001D /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0000010000000000000006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0000010000000000000007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA0000010000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000010000000000000001 /* ReConApp.swift in Sources */,
+				A10000010000000000000002 /* RootView.swift in Sources */,
+				A10000010000000000000003 /* AppContainer.swift in Sources */,
+				A10000010000000000000004 /* AppEnvironment.swift in Sources */,
+				A10000010000000000000005 /* AppError.swift in Sources */,
+				A10000010000000000000006 /* AuthModels.swift in Sources */,
+				A10000010000000000000007 /* SettingsModels.swift in Sources */,
+				A10000010000000000000008 /* DomainModels.swift in Sources */,
+				A10000010000000000000009 /* RichTextFormatter.swift in Sources */,
+				A1000001000000000000000A /* KeychainStore.swift in Sources */,
+				A1000001000000000000000B /* SettingsStore.swift in Sources */,
+				A1000001000000000000000C /* APIClient.swift in Sources */,
+				A1000001000000000000000D /* HubClient.swift in Sources */,
+				A1000001000000000000000E /* NotificationService.swift in Sources */,
+				A1000001000000000000000F /* AuthService.swift in Sources */,
+				A10000010000000000000010 /* ReConRepository.swift in Sources */,
+				A10000010000000000000011 /* LoginView.swift in Sources */,
+				A10000010000000000000012 /* MainTabView.swift in Sources */,
+				A10000010000000000000013 /* FriendsView.swift in Sources */,
+				A10000010000000000000014 /* ChatView.swift in Sources */,
+				A10000010000000000000015 /* SessionsView.swift in Sources */,
+				A10000010000000000000016 /* WorldsView.swift in Sources */,
+				A10000010000000000000017 /* InventoryView.swift in Sources */,
+				A10000010000000000000018 /* SettingsView.swift in Sources */,
+				A10000010000000000000019 /* ProfileView.swift in Sources */,
+				A1000001000000000000001E /* UserProfileView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0000010000000000000004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000001000000000000001C /* ReConTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0000010000000000000008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10000010000000000000001 /* ReConWidget.swift in Sources */,
+				C10000010000000000000002 /* ReConWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A50000010000000000000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A30000010000000000000001 /* ReCon */;
+			targetProxy = A50000010000000000000001 /* PBXContainerItemProxy */;
+		};
+		C50000010000000000000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C30000010000000000000003 /* ReConWidgetExtension */;
+			targetProxy = C50000010000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AB0000010000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2000001000000000000001F /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = ReCon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = ReCon/Resources/ReCon.entitlements;
+				DEVELOPMENT_ASSET_PATHS = ReCon/Resources/Assets.xcassets;
+				DEVELOPMENT_TEAM = 5TU767C42B;
+				INFOPLIST_FILE = ReCon/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReCon;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				PRODUCT_BUNDLE_IDENTIFIER = com.drapnard.recon;
+				PRODUCT_NAME = ReCon;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AB0000010000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20000010000000000000020 /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = ReCon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = ReCon/Resources/ReCon.entitlements;
+				DEVELOPMENT_ASSET_PATHS = ReCon/Resources/Assets.xcassets;
+				DEVELOPMENT_TEAM = 5TU767C42B;
+				INFOPLIST_FILE = ReCon/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReCon;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				PRODUCT_BUNDLE_IDENTIFIER = com.drapnard.recon;
+				PRODUCT_NAME = ReCon;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AB0000010000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5TU767C42B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drapnard.recon.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.10;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReCon.app/ReCon";
+			};
+			name = Debug;
+		};
+		AB0000010000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5TU767C42B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drapnard.recon.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.10;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReCon.app/ReCon";
+			};
+			name = Release;
+		};
+		AB0000010000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_VERSION = 5.10;
+			};
+			name = Debug;
+		};
+		AB0000010000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.10;
+			};
+			name = Release;
+		};
+		AB0000010000000000000007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = ReConWidget/ReConWidget.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5TU767C42B;
+				INFOPLIST_FILE = ReConWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 0.12.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drapnard.recon.widget;
+				PRODUCT_NAME = ReConWidgetExtension;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.10;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AB0000010000000000000008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = ReConWidget/ReConWidget.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5TU767C42B;
+				INFOPLIST_FILE = ReConWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 0.12.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drapnard.recon.widget;
+				PRODUCT_NAME = ReConWidgetExtension;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.10;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A90000010000000000000001 /* Build configuration list for PBXNativeTarget "ReCon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0000010000000000000001 /* Debug */,
+				AB0000010000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90000010000000000000002 /* Build configuration list for PBXNativeTarget "ReConTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0000010000000000000003 /* Debug */,
+				AB0000010000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90000010000000000000003 /* Build configuration list for PBXProject "ReCon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0000010000000000000005 /* Debug */,
+				AB0000010000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90000010000000000000001 /* Build configuration list for PBXNativeTarget "ReConWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0000010000000000000007 /* Debug */,
+				AB0000010000000000000008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2AB2C96D2F69F3BF007ECB98 /* XCRemoteSwiftPackageReference "Model3DView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/frzi/Model3DView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = A40000010000000000000001 /* Project object */;
+}
